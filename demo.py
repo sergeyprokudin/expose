@@ -377,8 +377,9 @@ def main(
                 camera_translation=hd_params['transl'],
                 camera_center=hd_params['center'],
                 bg_imgs=bg_hd_imgs,
+                render_bg=False,
                 return_with_alpha=True,
-                body_color=[0.4, 0.4, 0.7]
+                body_color=[1.0, 1.0, 1.0]
             )
             out_img['hd_overlay'] = hd_overlays
 
