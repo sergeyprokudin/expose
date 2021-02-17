@@ -267,6 +267,8 @@ def main(
     render = save_vis or show
     body_crop_size = exp_cfg.get('datasets', {}).get('body', {}).get(
         'transforms').get('crop_size', 256)
+
+    print("BODY CROP SIZE: %d" % body_crop_size)
     if render:
         hd_renderer = HDRenderer(img_size=body_crop_size)
 
